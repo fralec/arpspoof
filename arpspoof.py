@@ -148,7 +148,7 @@ def main():
 
     try:
         while poison_thread.is_alive():
-            time.sleep(1)  # delay is a quick hack to kind of sync output
+            time.sleep(0.05)  # delay is a quick hack to kind of sync output
                            # w/o this, the thread output messes up the prompt
                            # TODO: think of something a little less ugly
             command = raw_input('arpspoof# ').split()
